@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node load-balancer/lb.js",
+    "server1": "node backends/server1.js",
+    "monitor": "node health-monitor/monitor.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -10,6 +13,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^5.2.1"
+    "axios": "^1.13.6",
+    "ejs": "^5.0.1",
+    "express": "^5.2.1",
+    "http-proxy": "^1.18.1"
   }
 }

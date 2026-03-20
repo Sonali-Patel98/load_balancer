@@ -1,0 +1,37 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+h1 {
+  color: #333;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 60%;
+  background: white;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.up {
+  color: green;
+  font-weight: bold;
+}
+
+.down {
+  color: red;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}

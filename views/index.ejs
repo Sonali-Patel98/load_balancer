@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Load Balancer Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<h1>⚡ Smart Load Balancer Dashboard</h1>
+
+<table>
+  <tr>
+    <th>Server URL</th>
+    <th>Status</th>
+  </tr>
+
+  <% servers.forEach(server => { %>
+    <tr>
+        <td>
+  <a href="<%= server.url %>" target="_blank">
+    <%= server.url %>
+  </a>
+</td>
+      <td>
+        <% if (server.alive) { %>
+          <span class="up">UP ✅</span>
+        <% } else { %>
+          <span class="down">DOWN ❌</span>
+        <% } %>
+      </td>
+    </tr>
+  <% }) %>
+</table>
+
+<br>
+
+<a href="/api">➡️ Send Request via Load Balancer</a>
+
+</body>
+</html>
